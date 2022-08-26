@@ -41,6 +41,9 @@ Torghost software, one of the successful tools in the field of privacy and anony
 
 [Torghost Github](https://github.com/SusmithKrishnan/torghost)
 
+### 2. Milfscan
+Milfscan port scan tool is a simple scan tool that shows open ports. It has the reflex to detect services using standard ports.
+
 # We commemorate ancestor with respect
 ![alt text](https://github.com/C0derByM4H6301/mah-framework/blob/main/img/ata.jpg?raw=true)
 
