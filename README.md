@@ -39,7 +39,7 @@ A hub that runs software embedded as modules. Libraries and software that I wrot
 ### 1. TORGHOST
 Torghost software, one of the successful tools in the field of privacy and anonymity, has been added as a module for those who care about privacy.
 
-[Downlowad link](https://github.com/SusmithKrishnan/torghost)
+[Torghpst Github](https://github.com/SusmithKrishnan/torghost)
 
 # We commemorate ancestor with respect
 ![alt text](https://github.com/C0derByM4H6301/mah-framework/blob/main/img/ata.jpg?raw=true)
