@@ -35,6 +35,9 @@ A hub that runs software embedded as modules. Libraries and software that I wrot
     |--> jobs : if you want to see current running processes use. Example: show jobs
     |--> modules : prints available modules to the screen. Example: show modules
 ```
+## Modules
+
+
 
 # We commemorate ancestor with respect
 ![alt text](https://github.com/C0derByM4H6301/mah-framework/blob/main/img/ata.jpg?raw=true)
