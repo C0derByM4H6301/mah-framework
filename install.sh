@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Installation started!!!"
-chmod +x kvmilf.py 
+chmod +x mah-framework.py 
 sudo apt-get install python3 -y
 sudo apt-get install python3-pip -y
 sudo apt-get install tor -y
