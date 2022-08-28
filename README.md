@@ -15,7 +15,7 @@ A hub that runs software embedded as modules. Libraries and software that I wrot
     getip : Use it to find out your ip.
     exec : When this command runs, the commands you type in the "exec>" input are executed in the shell.
     banner : Prints a banner on the screen.
-    milfscan : A tool that scans all ports. E.g: milfscan 127.0.0.1 
+    portscan : A tool that scans all ports. E.g: portscan 127.0.0.1 
     install : use it if it is necessary to reinstall the necessary tools.
 
     set : This command to assign data to some variables. Warning, press a space at most once after this command.
@@ -41,8 +41,8 @@ Torghost software, one of the successful tools in the field of privacy and anony
 
 [Torghost Github](https://github.com/SusmithKrishnan/torghost)
 
-### 2. Milfscan
-Milfscan port scan tool is a simple scan tool that shows open ports. It has the reflex to detect services using standard ports.
+### 2. Portscan / Mah- Scan
+Portscan port scan tool is a simple scan tool that shows open ports. It has the reflex to detect services using standard ports.
 
 # We commemorate ancestor with respect
 ![alt text](https://github.com/C0derByM4H6301/mah-framework/blob/main/img/ata.jpg?raw=true)
