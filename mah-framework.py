@@ -15,7 +15,7 @@ from lib import rs # 13
 #"NMAP"
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 init(autoreset=True)
-#Kuvayi - Milfiye info
+#info
 Version = 1.0
 Author = "Coder Mahmut"
 GitHub = "https://github.com/C0derByM4H6301"
@@ -26,7 +26,7 @@ hng="My friend is Sefa"
 hng="My friend is Berat"
 hng="My big machine is Emin"
 hng="My friend is Bunyamin"
-#Kuvayi - Milfiye info done
+#info done
 
 # Argparse 
 parser = argparse.ArgumentParser()
