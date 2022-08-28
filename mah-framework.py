@@ -16,7 +16,7 @@ from lib import rs # 13
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 init(autoreset=True)
 #info
-Version = 1.2
+Version = 1.3
 Author = "Coder Mahmut"
 GitHub = "https://github.com/C0derByM4H6301"
 #helpful handsome guys=hng
@@ -30,8 +30,8 @@ hng="My friend is Bunyamin"
 
 # Argparse 
 parser = argparse.ArgumentParser()
-parser.add_argument("-s","--start",help="start to kuvayi milfiye",action="store_true")
-parser.add_argument("--install",help="installs the necessary software for kuvayi milfiye",action="store_true")
+parser.add_argument("-s","--start",help="start to mah-framework",action="store_true")
+parser.add_argument("--install",help="installs the necessary software for mah-framework",action="store_true")
 parser.add_argument("-v","--version",help="version information",action="store_true")
 parser.add_argument("-q","--quiet",help="quiet output",action="store_true")
 parser.add_argument("--http-server",help="start to http server, port: 8000",action="store_true")
@@ -86,11 +86,11 @@ def getip():
 #jobs function
 torghost=False
 
-def kvmilf_stop():
+def stop():
     if torghost==True:
         os.system("python modules/Anominy/torghost/torghost.py -x")
 
-def kvmilf_jobs():
+def jobs():
     asd,dsa,sad=Fore.BLUE+"[",Fore.BLUE+"]",Fore.RED+"*"
     if torghost==True:
         print(asd+sad+dsa+Fore.CYAN+" Torghost is running")
@@ -108,7 +108,7 @@ def http_server():
             httpd.serve_forever()
     except KeyboardInterrupt:
         exit("CTRL+C detected, httpd is shutting")
-def kvmilf_install():
+def framework_install():
     print(Fore.YELLOW+"Installation started!!!")
     os.system("sudo apt-get install python3 -y")
     os.system("sudo apt-get install python3-pip -y")
@@ -183,7 +183,7 @@ if args.start:
             if sh=="exit":
                 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
                 logging.warning('Admin logged out')
-                kvmilf_stop()
+                stop()
                 exit()
             if sh=="help":
                 help()
@@ -222,7 +222,7 @@ if args.start:
                         logging.info("torghost is not running")
             if sh[:4]=="show":
                 if sh[5:]=="jobs":
-                    kvmilf_jobs()
+                    jobs()
                 if sh[5:]=="modules":
                     print(Fore.RED+"Available modules: ")
                     print(Fore.BLUE+"Torghost")
@@ -245,12 +245,12 @@ if args.start:
                 except KeyboardInterrupt:
                     continue
             if sh=="install":
-                kvmilf_install()
+                framework_install()
     except KeyboardInterrupt:
-        kvmilf_stop()
+        stop()
         exit()
 if args.install:
-    kvmilf_install()
+    framework_install()
 
 if args.version:
     Version=str(Version)
@@ -259,7 +259,7 @@ if args.http_server:
     http_server()
 
 else:
-    banner.banners.banner7()
+    banner.banners.random_banner()
     time.sleep(0.2)
     print(Fore.RED+"please python3 file.py -h")
 ### <-- done --> ###
