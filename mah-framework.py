@@ -16,7 +16,7 @@ from lib import rs # 13
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 init(autoreset=True)
 #info
-Version = 1.0
+Version = 1.2
 Author = "Coder Mahmut"
 GitHub = "https://github.com/C0derByM4H6301"
 #helpful handsome guys=hng
@@ -35,7 +35,7 @@ parser.add_argument("--install",help="installs the necessary software for kuvayi
 parser.add_argument("-v","--version",help="version information",action="store_true")
 parser.add_argument("-q","--quiet",help="quiet output",action="store_true")
 parser.add_argument("--http-server",help="start to http server, port: 8000",action="store_true")
-parser.add_argument("--milfscan",help="start to milfscan, E.g: --milfscan 127.0.0.1")
+parser.add_argument("--portscan",help="start to portscan, E.g: --portscan 127.0.0.1")
 args = parser.parse_args()
 #Argparse done
 hostname=Fore.BLUE+"SERDAR"
@@ -69,7 +69,7 @@ banner12="""
 readline.parse_and_bind("tab: complete")
 ##autocomplate function
 def complete(text,state):
-    volcab = ['help','install','banner','exec','modules','show','jobs','ip','milfscan','say','set','hostname','exit','mini_say','Emin','emin','start','torghost','stop','getip']
+    volcab = ['help','install','banner','exec','modules','show','jobs','ip','portscan','say','set','hostname','exit','mini_say','Emin','emin','start','torghost','stop','getip']
     results = [x for x in volcab if x.startswith(text)] + [None]
     return results[state]
 #get ip function
@@ -133,7 +133,7 @@ def help():
     getip : Use it to find out your ip.
     exec : When this command runs, the commands you type in the "exec>" input are executed in the shell.
     banner : Prints a banner on the screen.
-    milfscan : A tool that scans all ports. E.g: milfscan 127.0.0.1 
+    portscan : A tool that scans all ports. E.g: portscan 127.0.0.1 
     install : use it if it is necessary to reinstall the necessary tools.
 
     set : This command to assign data to some variables. Warning, press a space at most once after this command.
@@ -162,8 +162,8 @@ def help():
 #        bar.update(i)
 # http-server function
 bannerarg=True
-if args.milfscan:
-    portscanner.milfscan.scan(args.milfscan)
+if args.portscan:
+    portscanner.portscanner.scan(args.portscan)
     bannerarg=False
 if args.quiet:
     bannerarg=False
@@ -238,10 +238,10 @@ if args.start:
                 os.system(cmd)
             if sh=="banner":
                 banner.banners.random_banner()
-            if sh[:8]=="milfscan":
+            if sh[:8]=="portscan":
                 try:
                     pass
-                    portscanner.milfscan.shell_scan(sh[9:])
+                    portscanner.portscanner.shell_scan(sh[9:])
                 except KeyboardInterrupt:
                     continue
             if sh=="install":
