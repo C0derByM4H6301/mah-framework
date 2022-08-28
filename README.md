@@ -8,6 +8,8 @@ A hub that runs software embedded as modules. Libraries and software that I wrot
 `root@kali:~# cd mah-framework`
 
 `root@kali:~# bash install.sh`
+### one line command install 
+` git clone https://github.com/C0derByM4H6301/mah-framework.git && cd mah-framework && bash install.sh`
 ### help documentation
 ```
     help : This command writes you the help documents.
