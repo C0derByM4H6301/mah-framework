@@ -121,6 +121,7 @@ def framework_install():
     os.system("sudo pip3 install readline")
     os.system("sudo pip3 install pyfiglet")
     os.system("sudo pip3 install progressbar")
+    os.system("sudo pip3 install pyftpdlib")
     os.system("sudo pip3 install -r modules/Anominy/torghost/requirements.txt")
     os.system("sudo chmod 777 modules/Anominy/torghost/torghost.py")
     os.system("bash modules/Anominy/torghost/build.sh")
