@@ -13,7 +13,7 @@ banner="""
 print(banner)
 print("The ftp service is hosted on port 1026!")
 authorizer = DummyAuthorizer()
-authorizer.add_user("user", "123456", "user", perm="elradfmw")
+authorizer.add_user("user", "123456", ".", perm="elradfmw")
 #authorizer.add_anonymous("anonim", perm="elradfmw")
 
 handler = FTPHandler
