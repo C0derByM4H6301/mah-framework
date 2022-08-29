@@ -38,6 +38,22 @@ A hub that runs software embedded as modules. Libraries and software that I wrot
     |--> jobs : if you want to see current running processes use. Example: show jobs
     |--> modules : prints available modules to the screen. Example: show modules
 ```
+### argparse help
+```
+usage: mah-framework.py [-h] [-s] [--install] [-v] [-q] [--http-server]
+                        [--portscan PORTSCAN]
+
+options:
+  -h, --help           show this help message and exit
+  -s, --start          start to mah-framework
+  --install            installs the necessary software for mah-framework
+  -v, --version        version information
+  -q, --quiet          quiet output
+  --http-server        start to http server, port: 8000
+  --portscan PORTSCAN  start to portscan, E.g: --portscan 127.0.0.1
+     
+
+```
 ## Modules
 ### 1. TORGHOST
 Torghost software, one of the successful tools in the field of privacy and anonymity, has been added as a module for those who care about privacy.
