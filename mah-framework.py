@@ -16,7 +16,7 @@ from lib import rs # 13
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 init(autoreset=True)
 #info
-Version = 1.3
+Version = 1.4
 Author = "Coder Mahmut"
 GitHub = "https://github.com/C0derByM4H6301"
 #helpful handsome guys=hng
