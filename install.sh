@@ -12,6 +12,7 @@ sudo pip3 install logging
 sudo pip3 install readline
 sudo pip3 install pyfiglet
 sudo pip3 install progressbar
+sudo pip3 install emoji
 sudo pip3 install -r modules/Anominy/torghost/requirements.txt
 sudo chmod 777 modules/Anominy/torghost/torghost.py
 bash modules/Anominy/torghost/build.sh
