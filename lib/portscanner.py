@@ -725,7 +725,7 @@ class portscanner:
                 on = check_port(ip, i)
                 if on == True:
                     print("port: ",i," open")
-                    milfscan.check(i)
+                    portscanner.check(i)
         except KeyboardInterrupt:
             exit("ctrl+c detected")
     def shell_scan(ip):
