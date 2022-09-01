@@ -173,7 +173,7 @@ if args.quiet:
 if args.start:
     #animated_marker()
     if bannerarg== True:
-        banner.banners.banner7()
+        banner.banners.random_banner()
     logging.info("shell is creating")
     readline.set_completer(complete)
     jobs=[]
