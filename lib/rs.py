@@ -14,16 +14,16 @@ class random_sentence:
             print(Fore.CYAN+sentence1_eng)
         def sentence2():
             #print("ahmet")
-            sentence2="Hayat olmus yaşam maşam surileri sikim sabah akşam"
-            sentence2_eng="I couldn't translate this."
+            sentence2="hücum için hazır ol çünkü her an savaş var"
+            sentence2_eng="be ready for the attack because there is always war"
             print(Fore.YELLOW+"Turkish:")
             print(Fore.CYAN+sentence2)
             print(Fore.YELLOW+"English:")
             print(Fore.CYAN+sentence2_eng)
         def sentence3():
             # print("anonymous")
-            sentence3="Aleksandır indir kaldır ferahlandır!"
-            sentence3_eng="I couldn't translate this"
+            sentence3="Zafer için çabala ve savaş"
+            sentence3_eng="Strive for victory and fight"
             print(Fore.YELLOW+"Turkish:")
             print(Fore.CYAN+sentence3)
             print(Fore.YELLOW+"English:")
