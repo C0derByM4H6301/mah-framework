@@ -174,7 +174,6 @@ if args.quiet:
 
 
 def check_status():
-    log.progressbar("serdar:")
     csb = pyfiglet.figlet_format("Checking ...", font = "slant"  )
     print(Fore.YELLOW+csb)
     log.info("Checking username")
