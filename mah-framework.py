@@ -176,9 +176,7 @@ if args.quiet:
 def check_status():
     csb = pyfiglet.figlet_format("Checking ...", font = "slant"  )
     print(Fore.YELLOW+csb)
-    log.info("Checking username")
     print("username: ",os.getlogin())
-    log.info("Checking id")
     print("id: ",os.getuid())
 #user shell?
 def scroll_text(text):
