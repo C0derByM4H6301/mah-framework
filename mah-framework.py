@@ -11,6 +11,8 @@ import socketserver # 10
 from lib import banner # 11
 from lib import portscanner # 12
 from lib import rs # 13
+import pyfiglet # 14
+import sys # 15
 #import progressbar # 13
 #"NMAP"
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
@@ -170,6 +172,22 @@ if args.portscan:
 if args.quiet:
     bannerarg=False
 
+
+def check_status():
+    log.progressbar("serdar:")
+    csb = pyfiglet.figlet_format("Checking ...", font = "slant"  )
+    print(Fore.YELLOW+csb)
+    log.info("Checking username")
+    print("username: ",os.getlogin())
+    log.info("Checking id")
+    print("id: ",os.getuid())
+#user shell?
+def scroll_text(text):
+  for char in str(text):
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    time.sleep(0.05)
+
 if args.start:
     #animated_marker()
     if bannerarg== True:
@@ -177,6 +195,7 @@ if args.start:
     logging.info("shell is creating")
     readline.set_completer(complete)
     jobs=[]
+    check_status()
     try:
         rs.random_sentence.random_sent()
         while True:
@@ -186,6 +205,7 @@ if args.start:
                 logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
                 logging.warning('Admin logged out')
                 stop()
+                scroll_text("Framework is down")
                 exit()
             if sh=="help":
                 help()
