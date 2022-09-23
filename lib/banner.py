@@ -1,5 +1,7 @@
 import random
 from colorama import *
+from termcolor import colored
+import pyfiglet
 init(autoreset=True)
 class banners:
     def banner1():
@@ -123,8 +125,12 @@ class banners:
 |_|_|_|__,|_|_|   |_| |_| |__,|_|_|_|___|_____|___|_| |_,_|
                                                            """
         print(Fore.YELLOW+banner8)
+    def banner9():
+        text = str("mah-framework")
+        cbprint = pyfiglet.figlet_format(text)
+        print(colored(cbprint, "blue", attrs=["blink"]))
     def random_banner():
-        num=random.randrange(1,9)
+        num=random.randrange(1,10)
         if num==1:
             banners.banner1()
         if num==2:
@@ -141,3 +147,6 @@ class banners:
             banners.banner7()
         if num==8:
             banners.banner8()
+        if num==9:
+            banners.banner9()
+            
