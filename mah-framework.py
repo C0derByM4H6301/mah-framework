@@ -186,13 +186,13 @@ def scroll_text(text):
     time.sleep(0.05)
 
 if args.start:
-    #animated_marker()
+    #animated_marker()    
+    check_status()
     if bannerarg== True:
         banner.banners.banner9()
     logging.info("shell is creating")
     readline.set_completer(complete)
     jobs=[]
-    check_status()
     try:
         rs.random_sentence.random_sent()
         while True:
