@@ -126,7 +126,7 @@ class banners:
                                                            """
         print(Fore.YELLOW+banner8)
     def banner9():
-        text = str("mah-framework")
+        text = str("mah\nframework")
         cbprint = pyfiglet.figlet_format(text)
         print(colored(cbprint, "blue", attrs=["blink"]))
     def random_banner():
