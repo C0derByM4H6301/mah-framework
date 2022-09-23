@@ -18,7 +18,7 @@ import sys # 15
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 init(autoreset=True)
 #info
-Version = 1.5
+Version = 1.7
 Author = "Coder Mahmut"
 GitHub = "https://github.com/C0derByM4H6301"
 #helpful handsome guys=hng
@@ -188,7 +188,7 @@ def scroll_text(text):
 if args.start:
     #animated_marker()
     if bannerarg== True:
-        banner.banners.random_banner()
+        banner.banners.banner9()
     logging.info("shell is creating")
     readline.set_completer(complete)
     jobs=[]
