@@ -185,11 +185,41 @@ def scroll_text(text):
     sys.stdout.flush()
     time.sleep(0.05)
 
+def load_animation():
+    load_str = "strarting to mah framework..."
+    ls_len = len(load_str)
+    animation = "|/-\\"
+    anicount = 0
+    counttime = 0        
+    i = 0                     
+  
+    while (counttime != 100):
+        time.sleep(0.075) 
+        load_str_list = list(load_str) 
+        x = ord(load_str_list[i])
+        y = 0                             
+        if x != 32 and x != 46:             
+            if x>90:
+                y = x-32
+            else:
+                y = x + 32
+            load_str_list[i]= chr(y)
+        res =''             
+        for j in range(ls_len):
+            res = res + load_str_list[j]
+        sys.stdout.write("\r"+res + animation[anicount])
+        sys.stdout.flush()
+        load_str = res
+        anicount = (anicount + 1)% 4
+        i =(i + 1)% ls_len
+        counttime = counttime + 1
+
 if args.start:
     #animated_marker()    
     check_status()
     if bannerarg== True:
         banner.banners.banner9()
+        load_animation()
     logging.info("shell is creating")
     readline.set_completer(complete)
     jobs=[]
